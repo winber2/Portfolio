@@ -16,9 +16,6 @@ class Homepage extends React.Component {
             <div className="parallax__layer" id="index"></div>
           </div>
         </div>
-        <div className="index">
-          hello
-        </div>
       </div>
     )
   }

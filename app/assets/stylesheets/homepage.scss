@@ -1,11 +1,21 @@
 div#base {
   background-image: asset-url('mountain.jpg');
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-origin: content-box;
-  // background-attachment: fixed;
-  // height: 100%;
-  // width: 100%;
+  transform: translateZ(-1150px) scale(5);
+  -webkit-transform: translateZ(-1150px) scale(5)
+}
+
+div#index {
+  transform: translateZ(-140px) scale(1.5);
+  -webkit-transform: translateZ(-140px) translateY(700px) scale(1.5);
+  background: white;
+}
+
+#group-1 {
+  z-index: 0;
+}
+
+#group-2 {
+  z-index: 5;
 }
 
 .parallax {
@@ -22,29 +32,7 @@ div#base {
   right: 0;
   bottom: 0;
   left: 0;
-  // background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.parallax__group {
-  // position: relative;
-  // height: 100vh;
-  // transform-style: preserve-3d;
-}
-
-#base {
-  transform: translateZ(-1000px) scale(5);
-  // -webkit-transform: translateZ(-1000px) scale(5)
-}
-
-#layer-2 {
-  transform: translateZ(-100px) scale(1);
-  // -webkit-transform: translateZ(-100px) scale(1);
-  background: white;
-}
-
-div.index {
-  // height: 2000px;
 }
