@@ -20,5 +20,7 @@ footer, header, a, figure, figcaption, img, aside {
   padding: 0;
   border: 0;
 
+  font-family: Josefin Sans;
+
   list-style: none;
 }
