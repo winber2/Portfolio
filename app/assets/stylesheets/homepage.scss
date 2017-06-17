@@ -5,21 +5,57 @@ div#base {
 }
 
 div#index {
-  transform: translateZ(-140px) scale(1.5);
-  -webkit-transform: translateZ(-140px) translateY(138vh) scale(1.5);
+  transform: translateZ(-140px)  translateY(150vh) scale(1.5);
+  -webkit-transform: translateZ(-140px)  translateY(150vh) scale(1.5);
   background: grey;
+}
 
+div.arrow-box {
+  position: relative;
+  z-index: 500;
+  left: 93%;
+  top: -100px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.arrow {
+  background-image: asset-url('arrow.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s;
+  // transition-timing-function: ease-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: rotate(90deg);
+  }
+}
+
+div#name {
+  transform: translateZ(-140px) scale(1.5);
+  -webkit-transform: translateZ(-140px) scale(1.5);
   h1 {
-    margin-left: 10vh;
+    margin-left: 100px;
     color: white;
     font-weight: 100;
     font-size: 70px;
 
     &:first-child {
-      margin-top: -85vh;
+      margin-top: 100px;
     }
   }
 }
+
 
 #group-1 {
   z-index: 0;
