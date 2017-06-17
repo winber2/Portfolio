@@ -2,26 +2,23 @@ div#base {
   background-image: asset-url('mountain.jpg');
   transform: translateZ(-1180px) scale(5);
   -webkit-transform: translateZ(-1180px) scale(5);
+}
+
+div#index {
+  transform: translateZ(-140px) scale(1.5);
+  -webkit-transform: translateZ(-140px) translateY(138vh) scale(1.5);
+  background: grey;
 
   h1 {
-    // position: absolute;
-    // top: 100px;
-    // left: 100px;
-    margin-left: 100px;
+    margin-left: 10vh;
     color: white;
     font-weight: 100;
     font-size: 70px;
 
     &:first-child {
-      margin-top: 100px;
+      margin-top: -85vh;
     }
   }
-}
-
-div#index {
-  transform: translateZ(-140px) scale(1.5);
-  -webkit-transform: translateZ(-140px) translateY(1300px) scale(1.5);
-  background: white;
 }
 
 #group-1 {
