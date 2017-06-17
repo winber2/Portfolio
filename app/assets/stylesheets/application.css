@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+div, h1, h2, h3, h4, h5, h6, p, span, ul, ol, li, section, main, body, html,
+footer, header, a, figure, figcaption, img, aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  list-style: none;
+}
