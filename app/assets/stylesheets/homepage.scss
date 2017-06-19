@@ -1,5 +1,5 @@
 div#base-1 {
-  background-image: asset-url('mountain.jpg');
+  background-image: asset-url('desktop.jpg');
   transform: translateZ(-1180px) scale(5);
   -webkit-transform: translateZ(-1180px) scale(5);
 }
@@ -52,24 +52,24 @@ div.triangles {
 
 div.white-triangle-top {
   position: relative;
-  top: -367px;
+  top: -100vh;
   z-index: 10;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 300px 100vw;
-  border-color: transparent transparent #ffffff transparent;
+  border-width: 0 0 90vw 100vw;
+  border-color: transparent transparent #f7f2e6 transparent;
 }
 
 div.white-triangle-bottom {
   position: relative;
   z-index: 10;
-  top: -367px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 300px 100vw 0 0;
-  border-color: #ffffff transparent transparent transparent;
+  top: -98vh;
+  width: 100vw;
+  height: 2000px;
+  // border-style: solid;
+  // border-width: 300px 100vw 0 0;
+  // border-color: #f7f2e6 transparent transparent transparent;
 }
 
 div.light-triangle-top {
