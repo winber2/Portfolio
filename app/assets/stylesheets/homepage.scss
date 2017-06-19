@@ -1,13 +1,19 @@
-div#base {
+div#base-1 {
   background-image: asset-url('mountain.jpg');
   transform: translateZ(-1180px) scale(5);
   -webkit-transform: translateZ(-1180px) scale(5);
 }
 
+div#base-2 {
+  background-image: asset-url('light.jpg');
+  transform: translateZ(-1180px) scale(5);
+  -webkit-transform: translateZ(-1180px) translateY(500vh) scale(5);
+}
+
 div#index {
-  transform: translateZ(-140px)  translateY(150vh) scale(1.5);
-  -webkit-transform: translateZ(-140px)  translateY(150vh) scale(1.5);
-  background: grey;
+  transform: translateZ(-140px)  translateY(90vh) scale(1.5);
+  -webkit-transform: translateZ(-140px) translateY(148.3vh) scale(1.5);
+  background: transparent;
 }
 
 div.arrow-box {
@@ -19,7 +25,7 @@ div.arrow-box {
   width: 70px;
   border-radius: 50%;
   background: white;
-
+  box-shadow: 0 0 10px gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +45,96 @@ div.arrow {
     transform: rotate(90deg);
   }
 }
+
+div.triangles {
+  position: relative;
+}
+
+div.white-triangle-top {
+  position: relative;
+  top: -367px;
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 300px 100vw;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+div.white-triangle-bottom {
+  position: relative;
+  z-index: 10;
+  top: -367px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 300px 100vw 0 0;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+div.light-triangle-top {
+  position: relative;
+  top: -1135px;
+  z-index: 8;
+  width: 100vw;
+  height: 560px;
+  background: #a1c2e6;
+  // border-style: solid;
+  // border-width: 0 0 300px 100vw;
+  // border-color: transparent transparent #a1c2e6 transparent;
+}
+
+div.light-triangle-bottom {
+  position: relative;
+  z-index: 8;
+  top: -1135px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 300px 100vw 0 0;
+  border-color: #a1c2e6 transparent transparent transparent;
+}
+
+div.blue-triangle-bottom {
+  position: relative;
+  z-index: 9;
+  top: -670px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 300px 0;
+  border-color: transparent #a1c2e6 transparent transparent;
+}
+
+div.blue-triangle-top {
+  position: relative;
+  z-index: 9;
+  top: -670px;
+  width: 100vw;
+  height: 2000px;
+  background: #a1c2e6;
+}
+
+div.dark-triangle-bottom {
+  position: relative;
+  z-index: 7;
+  top: -1670px;
+  width: 100vw;
+  height: 1500px;
+  background: white;
+  // border-style: solid;
+  // border-width: 0 100vw 300px 0;
+  // border-color: transparent  #0f4075 transparent transparent;
+}
+
+// div.dark-triangle-top {
+//   position: relative;
+//   z-index: 9;
+//   top: -670px;
+//   width: 100vw;
+//   height: 165px;
+//   background:  #0f4075;
+// }
 
 div#name {
   transform: translateZ(-140px) scale(1.5);

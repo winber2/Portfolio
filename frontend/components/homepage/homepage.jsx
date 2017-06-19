@@ -10,8 +10,8 @@ class Homepage extends React.Component {
       <div className="homepage">
         <div className="parallax">
           <div className="parralax__group" id="group-1">
-            <div className="parallax__layer" id="base">
-            </div>
+            <div className="parallax__layer" id="base-1"></div>
+            <div className="parallax__layer" id="base-2"></div>
           </div>
           <div className="parralax__group" id="group-2">
             <div className="parallax__layer" id="name">
@@ -22,6 +22,10 @@ class Homepage extends React.Component {
               <div className="arrow-box">
                 <div className="arrow"></div>
               </div>
+                <div className="white-triangle-top"></div>
+                <div className="white-triangle-bottom"></div>
+                <div className="blue-triangle-top"></div>
+                <div className="blue-triangle-bottom"></div>
             </div>
           </div>
         </div>
