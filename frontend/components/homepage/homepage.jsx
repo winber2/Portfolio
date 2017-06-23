@@ -8,27 +8,20 @@ class Homepage extends React.Component {
   render() {
     return(
       <div className="homepage">
-        <div className="parallax">
-          <div className="parralax__group" id="group-1">
-            <div className="parallax__layer" id="base-1"></div>
-            <div className="parallax__layer" id="base-2"></div>
+        <header>
+          <nav>
+            <li className="nav-about">about</li>
+            <li className="nav-projects">projects</li>
+            <li className="nav-home">contact</li>
+          </nav>
+        </header>
+
+        <main>
+          <div className="main-content">
+            <div className="image"></div>
+            <div className="heahder"></div>
           </div>
-          <div className="parralax__group" id="group-2">
-            <div className="parallax__layer" id="name">
-              <h1>Winber Xu</h1>
-              <h1>Software Engineer</h1>
-            </div>
-            <div className="parallax__layer" id="index">
-              <div className="arrow-box">
-                <div className="arrow"></div>
-              </div>
-                <div className="white-triangle-top"></div>
-                <div className="white-triangle-bottom"></div>
-                <div className="blue-triangle-top"></div>
-                <div className="blue-triangle-bottom"></div>
-            </div>
-          </div>
-        </div>
+        </main>
       </div>
     )
   }
