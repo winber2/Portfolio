@@ -20,7 +20,8 @@ footer, header, a, figure, figcaption, img, aside {
   padding: 0;
   border: 0;
 
-  font-family: Josefin Sans;
+  font-family: Athiti;
+  font-weight: 200;
 
   list-style: none;
 }

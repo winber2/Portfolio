@@ -23,8 +23,8 @@ nav {
 
     li {
       color: Black;
-      padding: 0 20px;
-      font-size: 24px;
+      padding: 3px 20px;
+      font-size: 22px;
       position: absolute;
       right: 0;
 
@@ -64,8 +64,12 @@ div.burger {
 }
 
 div.main-content {
-  background: #5eace0;
-  height: 500px;
+  background-image: asset-url('desktop.png');
+  background-size: 1200px 500px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #5eace0;
+  height: 600px;
 
   display: flex;
   align-items: center;
@@ -76,13 +80,15 @@ div.main-content {
   }
 
   h1 {
-    font-family: Source Sans Pro;
+    font-family: Antic Slab;
     font-weight: bold;
     font-size: 40pt;
     margin-left: 50px;
   }
 
 }
+
+
 
 div.about {
   margin: 0 auto;
@@ -91,8 +97,9 @@ div.about {
   // text-align: center;
 
   p {
-    padding: 30px 200px;
-    font-size: 18pt;
+    padding: 30px 200px 0 200px;
+    font-size: 15pt;
+    color: darkgray;
   }
 }
 

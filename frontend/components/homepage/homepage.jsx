@@ -66,9 +66,9 @@ class Homepage extends React.Component {
             </div>
           </div>
           <div className="about">
-            <p>Building software for me is about the user experience, the eye-candy and fluid browsing. I just want people to experience technology in a new light, and what better way is there than through a global medium. Technology is going into pretty cool places.</p>
+            <p>I'm a software engineer based in San Francisco focused on giving the best user experience possible, and I'm looking for some cool projects to work on. I love tackling challenges</p>
 
-          
+            <p>Technology is awesome, and I want to use it at its full potential. Why don't you check out some of my projects.</p>
           </div>
           <div className="border" />
           <div className="projects">
