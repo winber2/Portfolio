@@ -61,7 +61,18 @@ class Homepage extends React.Component {
         <main>
           <div className="main-content">
             <div className="image"></div>
-            <div className="heahder"></div>
+            <div className="title">
+              <h1 className="header">Winber Xu</h1>
+            </div>
+          </div>
+          <div className="about">
+            <p>Building software for me is about the user experience, the eye-candy and fluid browsing. I just want people to experience technology in a new light, and what better way is there than through a global medium. Technology is going into pretty cool places.</p>
+
+          
+          </div>
+          <div className="border" />
+          <div className="projects">
+            <article className="project"></article>
           </div>
         </main>
       </div>
