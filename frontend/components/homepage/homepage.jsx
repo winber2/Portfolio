@@ -2,7 +2,46 @@ import React from 'react';
 
 class Homepage extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
+    this.state = { isActive: '' };
+    this.toggleDropdown = this.toggleDropdown.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  openDropdown() {
+    this.setState({ isActive: 'active' });
+  }
+
+  closeDropdown() {
+    this.setState({ isActive: '' });
+  }
+
+  toggleDropdown() {
+    if (this.state.isScrolled) return;
+    if (this.state.isActive) {
+      this.setState({ isActive: '' });
+    } else {
+      this.setState({ isActive: 'active' });
+    }
+  }
+
+  handleScroll(e) {
+    let distance = e.path[1].scrollY;
+    if (distance !== 0) {
+      this.openDropdown();
+      this.state.isScrolled = true;
+    } else {
+      this.closeDropdown();
+      this.state.isScrolled = false;
+    }
   }
 
   render() {
@@ -10,9 +49,12 @@ class Homepage extends React.Component {
       <div className="homepage">
         <header>
           <nav>
-            <li className="nav-about">about</li>
-            <li className="nav-projects">projects</li>
-            <li className="nav-home">contact</li>
+            <div onClick={this.toggleDropdown} className={`burger ${this.state.isActive}`}></div>
+            <ul>
+              <li className={`nav-about ${this.state.isActive}`}>about</li>
+              <li className={`nav-projects ${this.state.isActive}`}>projects</li>
+              <li className={`nav-contact ${this.state.isActive}`}>contact</li>
+            </ul>
           </nav>
         </header>
 
