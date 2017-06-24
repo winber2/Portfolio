@@ -66,9 +66,9 @@ class Homepage extends React.Component {
             </div>
           </div>
           <div className="about">
-            <p>I'm a software engineer based in San Francisco focused on giving the best user experience possible, and I'm looking for some cool projects to work on. I love tackling challenges</p>
+            <p>I'm a software engineer based in San Francisco focused on giving the best user experience possible, and I'm looking for some cool projects to work on. Let's tackle some challenges together.</p>
 
-            <p>Technology is awesome, and I want to use it at its full potential. Why don't you check out some of my projects.</p>
+            <p>Technology is awesome, and I want to explore what it can do. Why don't you check out some of my projects.</p>
           </div>
           <div className="border" />
           <div className="projects">
