@@ -1,4 +1,13 @@
 import React from 'react';
+import Typist from 'react-typist';
+
+const cursor = {
+  show: true,
+  blink: true,
+  element: '|',
+  hideWhenDone: true,
+  hideWhenDoneDelay: 2000,
+}
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -6,6 +15,7 @@ class Homepage extends React.Component {
     this.state = { isActive: '' };
     this.toggleDropdown = this.toggleDropdown.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
+    this.handleCharacter = this.handleCharacter.bind(this);
   }
 
   componentDidMount() {
@@ -44,6 +54,10 @@ class Homepage extends React.Component {
     }
   }
 
+  handleCharacter(char, idx) {
+    debugger;
+  }
+
   render() {
     return(
       <div className="homepage">
@@ -62,7 +76,14 @@ class Homepage extends React.Component {
           <div className="main-content">
             <div className="image"></div>
             <div className="title">
-              <h1 className="header">Winber Xu</h1>
+
+              <Typist
+                className='typist-header'
+                cursor={cursor}
+                avgTypingDelay={70}
+                startDelay={2000}
+                onCharacterTyped={this.handleCharacter}
+                >Winber Xu</Typist>
             </div>
           </div>
           <div className="about">

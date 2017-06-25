@@ -76,10 +76,12 @@ div.main-content {
   justify-content: center;
 
   div.title {
-    width: 1400px;
+    width: 1000px;
+    height: 420px;
+    align-self: flex-end;
   }
 
-  h1 {
+  .typist-header {
     font-family: Antic Slab;
     font-weight: bold;
     font-size: 40pt;
