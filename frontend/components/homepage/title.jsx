@@ -9,6 +9,14 @@ const cursor = {
   hideWhenDoneDelay: 4000,
 }
 
+const charIndices = {
+  'Welcome': { 6: true },
+  'Component': { 8: true },
+  '  constructor': { 12: true },
+  '  render': { 1: true },
+  '    return': { 9: true }
+}
+
 class Title extends React.Component {
   constructor(props) {
     super(props);
@@ -22,10 +30,10 @@ class Title extends React.Component {
   }
 
   handleDelay(mean, std, { line, lineIdx, character, charIdx, defDelayGenerator }) {
-    if (character === '!' || character === '.') {
-      return 500;
+    if (charIndices[line] && charIndices[line][charIdx]) {
+      return 250;
     } else {
-      return 70
+      return 45;
     }
   }
 
@@ -40,6 +48,7 @@ class Title extends React.Component {
               className='typist-header'
               cursor={cursor}
               startDelay={2000}
+              stdTypingDelay={30}
               delayGenerator={this.handleDelay}>
               <strong className="purple">class</strong> <strong className="yellow">Welcome</strong> <strong className="purple">extends</strong> <strong className="green">React</strong>.<strong className="red">Component</strong> {`{`}<br />
                 <strong className="blue">  constructor</strong>(props) {`{`}<br />
