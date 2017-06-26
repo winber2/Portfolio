@@ -15,6 +15,12 @@ class Title extends React.Component {
     this.handleDelay = this.handleDelay.bind(this);
   }
 
+  componentDidMount() {
+    setTimeout( () => {
+      $('div.main-content h2').addClass('active');
+    }, 1500)
+  }
+
   handleDelay(mean, std, { line, lineIdx, character, charIdx, defDelayGenerator }) {
     if (character === '!' || character === '.') {
       return 500;
