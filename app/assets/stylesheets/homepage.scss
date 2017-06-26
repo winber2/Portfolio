@@ -68,18 +68,27 @@ div.main-content {
   background-size: 1100px 500px;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-color: #5eace0;
+  background-color: #87c6f1;
   height: 700px;
   border-bottom: 2px solid lightgray;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  h1 {
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 50pt;
+    margin-top: 100px;
+  }
+
+  h2 { margin-bottom: 100px; }
 
   div.information {
     width: 820px;
     height: 392px;
-    align-self: flex-end;
     display: flex;
 
     code {
@@ -98,6 +107,12 @@ div.main-content {
         // margin-left: 173px;
         color: black;
       }
+
+      strong.purple { color: #9a009a }
+      strong.red { color: #e2040d }
+      strong.yellow { color: #ffaa09 }
+      strong.blue { color: #2763ef }
+      strong.green { color: #559855 }
     }
   }
 
