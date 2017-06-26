@@ -28,9 +28,22 @@ ul.projects {
     h1 {
       position: relative;
       height: 100px;
-      top: 105px;
+      top: 60px;
       background: #f9f9f9;
       transition: all 0.5s;
+    }
+
+    h2 {
+      position: relative;
+      top: 10px;
+      text-align: center;
+      transition: all 0.5s;
+    }
+
+    h6 {
+      text-align: center;
+      transition: all 0.5s;
+      font-size: 14pt;
     }
 
     article.vibe {
@@ -45,7 +58,7 @@ ul.projects {
       background-image: asset-url('valkyrie.jpg');
     }
 
-    p {
+    section {
       position: relative;
       right: 70px;
       top: 20px;
@@ -66,12 +79,16 @@ ul.projects {
     }
 
     h1 {
-      top: 0px;
+      top: 10px;
       height: 80px;
       margin-bottom: 30px;
     }
 
-    p {
+    h2 {
+      top: 50px;
+    }
+
+    section {
       transform: translateX(15px) translateY(-10px);
     }
   }
@@ -82,7 +99,7 @@ ul.projects {
       cursor: pointer;
     }
 
-    p {
+    section {
       transform: translateX(15px) translateY(-10px);
     }
   }
@@ -93,7 +110,7 @@ ul.projects {
       cursor: pointer;
     }
 
-    p {
+    section {
       transform: translateX(15px) translateY(-10px);
     }
   }

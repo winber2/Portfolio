@@ -12,24 +12,26 @@ class Projects extends React.Component {
         <ul className="projects">
           <li className="vibe">
             <article className="vibe"></article>
-            <p className="project-description">
+            <section className="project-description">
               <h1>Vibe Music</h1>
-              helhoeaohleoh lao hlela lahoel le aohla olaog kadhalk hjdal;kjv safhlkajjghalkfh  heu hfdf half hsk jybt htgatsfaljk hfuwhfw flkaowhvjzlxkjhvwifj alkn
-            </p>
+              <h6>- Built with Ruby on Rails, React-Redux, and PostgreSQL.</h6>
+              <h6>- Built with Ruby on Rails, React-Redux, and PostgreSQL.</h6>
+              <h2>Music-sharing web application built from scratch, inspired by Soundcloud</h2>
+            </section>
           </li>
           <div className="border" />
           <li className="algomapper">
             <article className="algomapper"></article>
-            <p className="project-description">
+            <section className="project-description">
               helhoeaohleoh lao hlela lahoel le aohla olaog kadhalk hjdal;kjv safhlkajjghalkfh  heu hfdf half hsk jybt htgatsfaljk hfuwhfw flkaowhvjzlxkjhvwifj alkn
-            </p>
+            </section>
           </li>
           <div className="border" />
           <li className="valkyrie">
             <article className="valkyrie"></article>
-            <p className="project-description">
+            <section className="project-description">
               helhoeaohleoh lao hlela lahoel le aohla olaog kadhalk hjdal;kjv safhlkajjghalkfh  heu hfdf half hsk jybt htgatsfaljk hfuwhfw flkaowhvjzlxkjhvwifj alkn
-            </p>
+            </section>
           </li>
         </ul>
       </div>
