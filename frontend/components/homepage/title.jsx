@@ -42,7 +42,7 @@ class Title extends React.Component {
 
                 <strong className="blue">  render</strong>{`() {`}<br />
                   <strong className="purple">    return</strong>(<br />
-                    {`      <`}<strong className="red">Winber</strong> <strong className="yellow">props</strong>={`{SoftwareEngineering}`} {`/>`}<br />
+                    {`      <`}<strong className="red">Winber</strong> <strong className="yellow">props</strong>={`{SoftwareEngineer}`} {`/>`}<br />
                   {`    );`}<br />
                 {`  }`}<br />
               {`}`}
@@ -51,6 +51,9 @@ class Title extends React.Component {
           <div className="about-me">
             <h1></h1>
           </div>
+        </div>
+        <div className="arrow">
+          <div className="arrow-image" />
         </div>
       </div>
     );
