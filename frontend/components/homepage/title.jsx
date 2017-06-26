@@ -52,9 +52,7 @@ class Title extends React.Component {
             <h1></h1>
           </div>
         </div>
-        <div className="arrow">
-          <div className="arrow-image" />
-        </div>
+
       </div>
     );
   }

@@ -5,7 +5,6 @@
 .Typist .Cursor--blinking {
   opacity: 1;
   animation: blink 1s linear infinite;
-  /*animation-delay: 1s;*/
 }
 
 @keyframes blink {
