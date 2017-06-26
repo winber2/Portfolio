@@ -2,6 +2,7 @@ import React from 'react';
 import Title from './title';
 import About from './about';
 import Projects from './projects';
+import Contact from './contact';
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -67,6 +68,7 @@ class Homepage extends React.Component {
             <About />
           </div>
           <Projects />
+          <Contact />
         </main>
       </div>
     )
