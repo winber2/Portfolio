@@ -15,7 +15,12 @@ class Contact extends React.Component {
           <input type="text" placeholder="E-mail"/>
           <input type="text" placeholder="Subject"/>
           <textarea type="text" placeholder="Text"/>
+          <button>Submit</button>
         </section>
+        <ul className="contacts">
+          <figure className="linkedin" />
+          <figure className="github" />
+        </ul>
       </div>
     );
   }

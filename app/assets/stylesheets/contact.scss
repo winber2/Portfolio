@@ -24,6 +24,7 @@ div.contact {
   section.input-field {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 1200px;
 
     textarea {
@@ -31,10 +32,16 @@ div.contact {
       background: #87c6f1;
       border: none;
       border-radius: 3px;
+      margin-bottom: 10px;
       font-size: 16pt;
       resize: none;
       height: 300px;
+      width: 100%;
       color: black;
+
+      &:focus {
+        outline: none;
+      }
     }
 
     input {
@@ -45,10 +52,51 @@ div.contact {
       margin-bottom: 10px;
       font-size: 16pt;
       color: black;
+      width: 100%;
 
       &:focus {
         outline: none;
       }
+    }
+
+    button {
+      padding: 5px 10px;
+      background: #87c6f1;
+      border: none;
+      border-radius: 3px;
+      margin-bottom: 30px;
+      font-size: 20pt;
+      color: black;
+      width: 100px;
+    }
+  }
+}
+
+ul.contacts {
+  display: flex;
+
+  figure.linkedin {
+    background-image: asset-url('linkedin-grey.png');
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+
+    &:hover {
+      background-image: asset-url('linkedin.png');
+      cursor: pointer;
+    }
+  }
+
+  figure.github {
+    background-image: asset-url('github-grey.png');
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+
+    &:hover {
+      background-image: asset-url('github.png');
+      cursor: pointer;
     }
   }
 }
