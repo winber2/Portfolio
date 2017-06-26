@@ -62,7 +62,9 @@ class Homepage extends React.Component {
 
         <main>
           <Title />
-          <About />
+          <div className="about-background">
+            <About />
+          </div>
           <div className="border" />
           <div className="projects">
             <article className="project"></article>
