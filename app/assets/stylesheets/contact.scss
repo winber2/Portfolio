@@ -6,20 +6,49 @@ div.triangle {
   border-color: #ffffff transparent transparent transparent;
   position: relative;
   bottom: 2px;
+  padding-bottom: 50px;
 }
 
 div.contact {
   margin: 0 auto;
   background: #f9f9f9;
   border-top: 2px solid LightGray;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  h1 { margin-bottom: 50px; }
+
   section.input-field {
     display: flex;
     flex-direction: column;
     width: 1200px;
+
+    textarea {
+      padding: 5px 10px;
+      background: #87c6f1;
+      border: none;
+      border-radius: 3px;
+      font-size: 16pt;
+      resize: none;
+      height: 300px;
+      color: black;
+    }
+
+    input {
+      padding: 5px 10px;
+      background: #87c6f1;
+      border: none;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      font-size: 16pt;
+      color: black;
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 }

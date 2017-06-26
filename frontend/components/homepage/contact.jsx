@@ -9,10 +9,12 @@ class Contact extends React.Component {
     return(
       <div className="contact">
         <div className="triangle" />
+        <h1>contact</h1>
         <section className="input-field">
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
+          <input type="text" placeholder="Name"/>
+          <input type="text" placeholder="E-mail"/>
+          <input type="text" placeholder="Subject"/>
+          <textarea type="text" placeholder="Text"/>
         </section>
       </div>
     );
