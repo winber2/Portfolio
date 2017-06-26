@@ -64,28 +64,51 @@ div.burger {
 }
 
 div.main-content {
-  background-image: asset-url('desktop.png');
-  background-size: 1200px 500px;
+  background-image: asset-url('desktop2.png');
+  background-size: 1100px 500px;
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #5eace0;
-  height: 600px;
+  height: 700px;
+  border-bottom: 2px solid lightgray;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  div.title {
-    width: 1000px;
-    height: 420px;
+  div.information {
+    width: 820px;
+    height: 392px;
     align-self: flex-end;
+    display: flex;
+
+    code {
+      background: #f5f5f5
+    }
+    div.title {
+      align-self: flex-start;
+      min-width: 500px;
+      max-width: 500px;
+
+      strong {
+        color: lightblue;
+      }
+
+      strong.aside {
+        // margin-left: 173px;
+        color: black;
+      }
+    }
   }
 
   .typist-header {
-    font-family: Antic Slab;
+    font-family: Inconsolata;
     font-weight: bold;
-    font-size: 40pt;
-    margin-left: 50px;
+    font-size: 15pt;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: black;
+    white-space: pre;
   }
 
 }
@@ -97,6 +120,10 @@ div.about {
   width: 1400px;
   height: 300px;
   text-align: center;
+
+  h1 {
+    margin-top: 20px;
+  }
 
   p {
     padding: 30px 200px 0 200px;

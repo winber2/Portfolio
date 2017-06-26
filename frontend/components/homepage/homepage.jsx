@@ -1,12 +1,13 @@
 import React from 'react';
 import Typist from 'react-typist';
+import Highlight from 'react-highlight';
 
 const cursor = {
   show: true,
   blink: true,
   element: '|',
   hideWhenDone: true,
-  hideWhenDoneDelay: 2000,
+  hideWhenDoneDelay: 4000,
 }
 
 class Homepage extends React.Component {
@@ -15,7 +16,7 @@ class Homepage extends React.Component {
     this.state = { isActive: '' };
     this.toggleDropdown = this.toggleDropdown.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
-    this.handleCharacter = this.handleCharacter.bind(this);
+    this.handleDelay = this.handleDelay.bind(this);
   }
 
   componentDidMount() {
@@ -54,8 +55,12 @@ class Homepage extends React.Component {
     }
   }
 
-  handleCharacter(char, idx) {
-    debugger;
+  handleDelay(mean, std, { line, lineIdx, character, charIdx, defDelayGenerator }) {
+    if (character === '!' || character === '.') {
+      return 500;
+    } else {
+      return 70
+    }
   }
 
   render() {
@@ -74,19 +79,35 @@ class Homepage extends React.Component {
 
         <main>
           <div className="main-content">
-            <div className="image"></div>
-            <div className="title">
+            <div className="information">
+              <div className="title">
+                <Typist
+                  className='typist-header'
+                  cursor={cursor}
+                  startDelay={2000}
+                  delayGenerator={this.handleDelay}>
+                  {`class Hey extends React.component {`}<br />
+                     {`  constructor(props) {`}<br />
+                       {`    super(props);`}<br />
+                     {`  }`}<br /><br />
 
-              <Typist
-                className='typist-header'
-                cursor={cursor}
-                avgTypingDelay={70}
-                startDelay={2000}
-                onCharacterTyped={this.handleCharacter}
-                >Winber Xu</Typist>
+                     {`  render() {`}<br />
+                       {`    return (`}<br />
+                         {`      Software Engineer`}<br />
+                       {`    );`}<br />
+                     {`  }`}<br />
+                  {`}`}
+                </Typist>
+              </div>
+              <div className="about-me">
+                <div className="about-box">
+
+                </div>
+              </div>
             </div>
           </div>
           <div className="about">
+            <h1>about</h1>
             <p>I'm a software engineer based in San Francisco focused on giving the best user experience possible, and I'm looking for some cool projects to work on. Let's tackle some challenges together.</p>
 
             <p>Technology is awesome, and I want to explore what it can do. Why don't you check out some of my projects.</p>
