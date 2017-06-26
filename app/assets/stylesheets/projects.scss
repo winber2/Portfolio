@@ -36,14 +36,16 @@ ul.projects {
     h2 {
       position: relative;
       top: 10px;
+      width: 550px;
       text-align: center;
       transition: all 0.5s;
     }
 
     h6 {
-      text-align: center;
+      margin: 0 auto;
+      width: 470px;
       transition: all 0.5s;
-      font-size: 14pt;
+      font-size: 13.5pt;
     }
 
     article.vibe {
@@ -85,7 +87,7 @@ ul.projects {
     }
 
     h2 {
-      top: 50px;
+      top: 40px;
     }
 
     section {
@@ -99,6 +101,16 @@ ul.projects {
       cursor: pointer;
     }
 
+    h1 {
+      top: 10px;
+      height: 80px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      top: 40px;
+    }
+
     section {
       transform: translateX(15px) translateY(-10px);
     }
@@ -108,6 +120,16 @@ ul.projects {
     article {
       transform: translateX(-15px) translateY(10px);
       cursor: pointer;
+    }
+
+    h1 {
+      top: 10px;
+      height: 80px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      top: 40px;
     }
 
     section {
