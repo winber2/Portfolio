@@ -1,0 +1,49 @@
+div.about {
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+  padding-bottom: 25px;
+
+  h1 {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 14pt;
+    color: darkgray;
+  }
+
+  section.about-and-skills {
+    display: flex;
+
+    aside.about {
+      flex: 1;
+    }
+
+    ul.skills {
+      flex: 1;
+
+      li {
+        text-align: left;
+      }
+    }
+  }
+}
+
+div.border {
+  height: 2px;
+  width: 800px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: black;
+  opacity: 0.2;
+}
+
+div.projects {
+  height: 1000px;
+}

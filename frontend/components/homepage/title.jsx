@@ -53,7 +53,7 @@ class Title extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
