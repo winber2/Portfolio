@@ -11,6 +11,7 @@ ul.projects {
   li {
     display: flex;
     height: 300px;
+    margin: 50px 0;
 
     article {
       margin: 20px;
@@ -32,4 +33,20 @@ ul.projects {
       font-size: 14pt;
     }
   }
+}
+
+h1 {
+  text-align: center;
+  font-size: 45pt;
+  margin-bottom: 50px;
+}
+
+
+div.border {
+  height: 2px;
+  width: 800px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: black;
+  opacity: 0.2;
 }

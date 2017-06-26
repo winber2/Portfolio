@@ -1,5 +1,6 @@
 div.about-background {
   background: #f9f9f9;
+  border-bottom: 2px solid LightGray;
 }
 
 div.about {
@@ -7,7 +8,7 @@ div.about {
   padding-top: 50px;
   width: 1000px;
   height: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 
   h1 {
     text-align: center;
@@ -84,13 +85,4 @@ div.css {
   height: 100%;
   width: 80%;
   background: #87c6f1;
-}
-
-div.border {
-  height: 2px;
-  width: 800px;
-  border-radius: 50%;
-  margin: 0 auto;
-  background: black;
-  opacity: 0.2;
 }
