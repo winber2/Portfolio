@@ -14,7 +14,7 @@ class About extends React.Component {
             <h2>me</h2>
             <p>I'm a software engineer based in San Francisco focused on giving the best user experience possible. Building web applications is my passion, and I'm excited to be where I am today. But, I think a sense of self-placency in this growing field of technology means you don't love development as much as you say. Web development is "development" for a reason, right? It's constantly being built and constantly being improved on.</p>
             <br />
-            <p>Technology is awesome, and I want to explore what it can do. At the moment, I've been working on a variety on projects!</p>
+            <p>Technology is awesome, and I want to explore what it can do. Currently, I've been working on a variety on projects!</p>
           </aside>
           <ul className="skills">
             <h2>skills</h2>
