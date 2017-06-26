@@ -8,14 +8,13 @@ class Contact extends React.Component {
   render() {
     return(
       <div className="contact">
-        <div className="triangle" />
         <h1>contact</h1>
         <section className="input-field">
-          <input type="text" placeholder="Name"/>
-          <input type="text" placeholder="E-mail"/>
-          <input type="text" placeholder="Subject"/>
-          <textarea type="text" placeholder="Text"/>
-          <button>Submit</button>
+          <input type="text" placeholder="name"/>
+          <input type="text" placeholder="e-mail"/>
+          <input type="text" placeholder="subject"/>
+          <textarea type="text" placeholder="text"/>
+          <button>submit</button>
         </section>
         <ul className="contacts">
           <figure className="linkedin" />
