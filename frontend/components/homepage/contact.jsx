@@ -14,7 +14,10 @@ class Contact extends React.Component {
           <input type="text" placeholder="e-mail"/>
           <input type="text" placeholder="subject"/>
           <textarea type="text" placeholder="text"/>
-          <button>submit</button>
+          <button>
+            <p>submit</p>
+            <div className="button-fill" />
+          </button>
         </section>
         <ul className="contacts">
           <figure className="linkedin" />

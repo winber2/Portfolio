@@ -30,6 +30,10 @@ nav {
 
       opacity: 0;
       transition: opacity 0.5s, transform 0.5s;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     li.nav-contact.active {
@@ -60,6 +64,10 @@ div.burger {
 
   &.active {
     transform: rotate(180deg);
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
 

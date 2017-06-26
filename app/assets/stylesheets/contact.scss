@@ -60,17 +60,37 @@ div.contact {
     }
 
     button {
-      padding: 5px 10px;
+      position: relative;
+      padding: 8px 15px;
       background: #87c6f1;
       border: none;
       margin-bottom: 60px;
       font-size: 20pt;
       font-weight: 400;
       color: black;
-      width: 100px;
 
       &:focus {
         outline: none;
+      }
+
+      p {
+        position: relative;
+        z-index: 10;
+      }
+
+      div.button-fill {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 0px;
+        width: 100%;
+        background-color: #2294d4;
+        transition: height 0.4s ease;
+      }
+
+
+      &:hover div.button-fill {
+        height: 100%;
       }
     }
   }

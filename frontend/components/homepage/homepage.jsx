@@ -3,6 +3,7 @@ import Title from './title';
 import About from './about';
 import Projects from './projects';
 import Contact from './contact';
+require('smoothscroll-polyfill').polyfill();
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class Homepage extends React.Component {
     this.state = { isActive: '' };
     this.toggleDropdown = this.toggleDropdown.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -48,6 +50,28 @@ class Homepage extends React.Component {
     }
   }
 
+  handleClick(item) {
+    if (item === 'about') {
+      window.scrollTo({
+        top: 600,
+        left: 0,
+        behavior: 'smooth'
+      });
+    } else if (item === 'projects') {
+      window.scrollTo({
+        top: 1100,
+        left: 0,
+        behavior: 'smooth'
+      });
+    } else {
+      window.scrollTo({
+        top: 2800,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  }
+
   render() {
     return(
       <div className="homepage">
@@ -55,9 +79,9 @@ class Homepage extends React.Component {
           <nav>
             <div onClick={this.toggleDropdown} className={`burger ${this.state.isActive}`}></div>
             <ul>
-              <li className={`nav-about ${this.state.isActive}`}>about</li>
-              <li className={`nav-projects ${this.state.isActive}`}>projects</li>
-              <li className={`nav-contact ${this.state.isActive}`}>contact</li>
+              <li onClick={() => this.handleClick('about')} className={`nav-about ${this.state.isActive}`}>about</li>
+              <li onClick={() => this.handleClick('projects')} className={`nav-projects ${this.state.isActive}`}>projects</li>
+              <li onClick={() => this.handleClick('contact')} className={`nav-contact ${this.state.isActive}`}>contact</li>
             </ul>
           </nav>
         </header>
