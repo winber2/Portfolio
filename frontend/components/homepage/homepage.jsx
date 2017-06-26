@@ -59,13 +59,19 @@ class Homepage extends React.Component {
       });
     } else if (item === 'projects') {
       window.scrollTo({
-        top: 1100,
+        top: 1200,
+        left: 0,
+        behavior: 'smooth'
+      });
+    } else if (item === 'contact') {
+      window.scrollTo({
+        top: 2800,
         left: 0,
         behavior: 'smooth'
       });
     } else {
       window.scrollTo({
-        top: 2800,
+        top: 0,
         left: 0,
         behavior: 'smooth'
       });
@@ -77,12 +83,15 @@ class Homepage extends React.Component {
       <div className="homepage">
         <header>
           <nav>
-            <div onClick={this.toggleDropdown} className={`burger ${this.state.isActive}`}></div>
-            <ul>
-              <li onClick={() => this.handleClick('about')} className={`nav-about ${this.state.isActive}`}>about</li>
-              <li onClick={() => this.handleClick('projects')} className={`nav-projects ${this.state.isActive}`}>projects</li>
-              <li onClick={() => this.handleClick('contact')} className={`nav-contact ${this.state.isActive}`}>contact</li>
-            </ul>
+            <span onClick={() => this.handleClick('portfolio')}>portfolio</span>
+            <div className="dropdown">
+              <div onClick={this.toggleDropdown} className={`burger ${this.state.isActive}`}></div>
+              <ul>
+                <li onClick={() => this.handleClick('about')} className={`nav-about ${this.state.isActive}`}>about</li>
+                <li onClick={() => this.handleClick('projects')} className={`nav-projects ${this.state.isActive}`}>projects</li>
+                <li onClick={() => this.handleClick('contact')} className={`nav-contact ${this.state.isActive}`}>contact</li>
+              </ul>
+            </div>
           </nav>
         </header>
 

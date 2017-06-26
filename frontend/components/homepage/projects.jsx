@@ -25,7 +25,7 @@ class Projects extends React.Component {
             <section className="project-description">
               <h1>AlgoMapper</h1>
               <h6>• Built with Python/Django, React-Redux, and D3.js</h6>
-              <h6>• Customized node-path visualizations and runtime comparisons using D3.js</h6>
+              <h6>• Customized visualizations and runtime comparisons using D3.js</h6>
               <h2>Shortest-path algorithm visualizer that compares four well-known algorithms</h2>
             </section>
           </li>

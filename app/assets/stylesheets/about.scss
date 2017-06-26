@@ -22,7 +22,7 @@ div.about {
   }
 
   p {
-    font-size: 14pt;
+    font-size: 13pt;
     color: #404040;
   }
 
@@ -31,26 +31,34 @@ div.about {
 
     aside.about {
       flex: 1;
-      margin-right: 30px;
+      margin-right: 50px;
     }
 
     ul.skills {
       flex: 1;
 
-      li {
-        text-align: left;
+      ul.skills-list {
         display: flex;
         flex-direction: column;
-        margin-bottom: 10px;
+        justify-content: space-around;
+        height: 100%;
+        padding-bottom: 50px;
 
-        span {
-          font-size: 16pt;
-        }
+        li {
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 10px;
 
-        div.bar-line {
-          width: 100%;
-          height: 5px;
-          border-bottom: 1px solid LightGray;
+          span {
+            font-size: 16pt;
+          }
+
+          div.bar-line {
+            width: 100%;
+            height: 5px;
+            border-bottom: 1px solid LightGray;
+          }
         }
       }
     }

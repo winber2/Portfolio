@@ -13,9 +13,24 @@ nav {
   background: white;
   opacity: 0.7;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
+
+  span {
+    font-size: 22pt;
+
+    &:hover {
+      cursor: pointer;
+      text-shadow: 0 0 0 black;
+    }
+  }
+
+  div.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
   ul {
     display: flex;
@@ -34,6 +49,7 @@ nav {
 
       &:hover {
         cursor: pointer;
+        text-shadow: 0 0 0 black;
       }
     }
 
