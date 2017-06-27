@@ -1,6 +1,5 @@
 class MeMailer < ApplicationMailer
-  def send(email)
-    byebug
+  def send_mail(email)
     mg_client = Mailgun::Client.new ENV['api_key']
     message_params = {:from    => ENV['gmail_username'],
                       :to      => ENV['gmail_username'],
