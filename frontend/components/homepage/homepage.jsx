@@ -53,7 +53,7 @@ class Homepage extends React.Component {
   handleClick(item) {
     if (item === 'about') {
       window.scrollTo({
-        top: 600,
+        top: 620,
         left: 0,
         behavior: 'smooth'
       });
