@@ -1,6 +1,8 @@
 class Api::MailersController < ApplicationController
   def create
-    MeMailer.send(mail_params)
+    @email = Email.new(mail_params)
+    debugger
+    MeMailer.send(@email)
   end
 
   private
