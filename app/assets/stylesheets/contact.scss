@@ -31,7 +31,7 @@ div.contact {
       padding: 5px 10px;
       background: #87c6f1;
       border: none;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       border-left: 5px solid #2294d4;
       font-size: 16pt;
       resize: none;
@@ -64,7 +64,7 @@ div.contact {
       padding: 8px 15px;
       background: #87c6f1;
       border: none;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
       font-size: 20pt;
       font-weight: 400;
       color: black;
@@ -92,18 +92,47 @@ div.contact {
       &:hover div.button-fill {
         height: 100%;
       }
+
+      &.submitted div.button-fill {
+        height: 100%;
+      }
     }
 
     span {
+      white-space: pre;
+      opacity: 0;
       font-size: 16pt;
       color: #3a3177;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      transition: opacity 0.5s;
+      transition-delay: 0.3s;
+
+      &.active {
+        opacity: 1;
+      }
+
+      &.transitioning {
+        opacity: 0;
+        transition-delay: 0s;
+      }
     }
   }
 }
 
 ul.contacts {
   display: flex;
+  transform: translateY(-30px);
+  transition: transform 0.5s;
+
+  &.active {
+    transform: translateY(0px);
+  }
+
+  figure a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 
   figure.linkedin {
     background-image: asset-url('linkedin-grey.png');
