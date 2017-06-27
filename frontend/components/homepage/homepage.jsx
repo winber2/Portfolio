@@ -59,7 +59,7 @@ class Homepage extends React.Component {
       });
     } else if (item === 'projects') {
       window.scrollTo({
-        top: 1200,
+        top: 1230,
         left: 0,
         behavior: 'smooth'
       });
