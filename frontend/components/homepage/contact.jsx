@@ -46,6 +46,7 @@ class Contact extends React.Component {
       email: '',
       subject: '',
       text: '',
+      active: 'active',
       transition: 'transitioning'
     });
 
