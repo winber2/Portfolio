@@ -16,7 +16,7 @@ class About extends React.Component {
             <br />
             <p>But, I think a sense of complacency in this growing field of technology means you don't love development as much as you say. Web development is "development" for a reason, right? It's constantly being built and constantly being improved on, and that's what I love about it.</p>
             <br />
-            <p>Technology is awesome, and I want to explore what it can do. Check out some of the applications I've built!</p>
+            <p>Technology is awesome, and I want to explore what it can do.</p>
           </aside>
           <ul className="skills">
             <h2>skills</h2>

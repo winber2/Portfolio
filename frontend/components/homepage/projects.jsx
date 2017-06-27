@@ -5,13 +5,16 @@ class Projects extends React.Component {
     super(props);
   }
 
+
   render() {
     return(
       <div className="projects">
         <h1>projects</h1>
         <ul className="projects">
           <li className="vibe">
-            <article className="vibe"></article>
+            <article className="vibe">
+              <a href='http://www.vibemusic.life' />
+            </article>
             <section className="project-description">
               <h1>Vibe Music</h1>
               <h6>• Built with Ruby on Rails, React-Redux, and PostgreSQL</h6>
@@ -21,7 +24,9 @@ class Projects extends React.Component {
           </li>
           <div className="border" />
           <li className="algomapper">
-            <article className="algomapper"></article>
+            <article className="algomapper">
+              <a href='http://www.algomapper.life' />
+            </article>
             <section className="project-description">
               <h1>AlgoMapper</h1>
               <h6>• Built with Python/Django, React-Redux, and D3.js</h6>
@@ -31,7 +36,9 @@ class Projects extends React.Component {
           </li>
           <div className="border" />
           <li className="valkyrie">
-            <article className="valkyrie"></article>
+            <article className="valkyrie">
+              <a href='http://winber2.github.io' />
+            </article>
             <section className="project-description">
               <h1>Valkyrie</h1>
               <h6>• Pure JavaScript game utilizing EaselJS and jQuery</h6>

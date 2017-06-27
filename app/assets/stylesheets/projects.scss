@@ -25,6 +25,12 @@ ul.projects {
       transition: transform 0.5s;
 
       position: relative;
+
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
     }
 
     h1 {
