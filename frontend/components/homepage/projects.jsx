@@ -13,7 +13,9 @@ class Projects extends React.Component {
         <ul className="projects">
           <li className="vibe">
             <article className="vibe">
-              <a href='http://www.vibemusic.life' />
+              <div className="vibe-image">
+                <a href='http://www.vibemusic.life' />
+              </div>
             </article>
             <section className="project-description">
               <h1>Vibe Music</h1>
@@ -25,7 +27,9 @@ class Projects extends React.Component {
           <div className="border" />
           <li className="algomapper">
             <article className="algomapper">
-              <a href='http://www.algomapper.life' />
+              <div className="algomapper-image">
+                <a href='http://www.algomapper.life' />
+              </div>
             </article>
             <section className="project-description">
               <h1>AlgoMapper</h1>
@@ -37,7 +41,9 @@ class Projects extends React.Component {
           <div className="border" />
           <li className="valkyrie">
             <article className="valkyrie">
-              <a href='http://winber2.github.io' />
+              <div className="valkyrie-image">
+                <a href='http://winber2.github.io' />
+              </div>
             </article>
             <section className="project-description">
               <h1>Valkyrie</h1>

@@ -19,12 +19,23 @@ ul.projects {
       margin: 20px;
       height: 310px;
       width: 310px;
+      max-height: 310px;
+      max-width: 310px;
       min-width: 310px;
       background-size: cover;
       background-position: center;
       transition: transform 0.5s;
+      overflow: hidden;
 
       position: relative;
+
+      div {
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.5s;
+        height: 100%;
+        width: 100%;
+      }
 
       a {
         display: block;
@@ -56,15 +67,15 @@ ul.projects {
       font-size: 13.5pt;
     }
 
-    article.vibe {
+    div.vibe-image {
       background-image: asset-url('display.jpg');
     }
 
-    article.algomapper {
+    div.algomapper-image {
       background-image: asset-url('algo.jpg');
     }
 
-    article.valkyrie {
+    div.valkyrie-image {
       background-image: asset-url('valkyrie.jpg');
     }
 
@@ -88,6 +99,10 @@ ul.projects {
       cursor: pointer;
     }
 
+    div {
+      transform: scale(1.2);
+    }
+
     h1 {
       top: 10px;
       height: 80px;
@@ -109,6 +124,10 @@ ul.projects {
       cursor: pointer;
     }
 
+    div {
+      transform: scale(1.2);
+    }
+
     h1 {
       top: 10px;
       height: 80px;
@@ -128,6 +147,10 @@ ul.projects {
     article {
       transform: translateX(-15px) translateY(10px);
       cursor: pointer;
+    }
+
+    div {
+      transform: scale(1.2);
     }
 
     h1 {
