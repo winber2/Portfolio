@@ -50,6 +50,14 @@ div.about {
           flex-direction: column;
           margin-bottom: 10px;
 
+          div.bar {
+            transition: all 0.4s;
+          }
+
+          &:hover div.bar {
+            background: #469ad4;
+          }
+
           span {
             font-size: 16pt;
           }

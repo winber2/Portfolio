@@ -24,31 +24,31 @@ class About extends React.Component {
               <li>
                 <span>JavaScript</span>
                 <div className='bar-line'>
-                  <div className='javascript' />
+                  <div className='javascript bar' />
                 </div>
               </li>
               <li>
                 <span>React-Redux</span>
                 <div className='bar-line'>
-                  <div className='react-redux' />
+                  <div className='react-redux bar' />
                 </div>
               </li>
               <li>
                 <span>Ruby/Rails</span>
                 <div className='bar-line'>
-                  <div className='ruby-rails' />
+                  <div className='ruby-rails bar' />
                 </div>
               </li>
               <li>
                 <span>HTML5</span>
                 <div className='bar-line'>
-                  <div className='html' />
+                  <div className='html bar' />
                 </div>
               </li>
               <li>
                 <span>CSS3</span>
                 <div className='bar-line'>
-                  <div className='css' />
+                  <div className='css bar' />
                 </div>
               </li>
             </ul>

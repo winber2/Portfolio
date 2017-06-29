@@ -42,6 +42,7 @@ nav {
       padding: 3px 20px;
       font-size: 22px;
       position: absolute;
+      z-index: -1;
       right: 0;
 
       opacity: 0;
@@ -56,14 +57,17 @@ nav {
     li.nav-contact.active {
       transform: translateX(-60px);
       opacity: 1;
+      z-index: 10;
     }
     li.nav-projects.active {
       transform: translateX(-170px);
       opacity: 1;
+      z-index: 10;
     }
     li.nav-about.active {
       transform: translateX(-290px);
       opacity: 1;
+      z-index: 10;
     }
   }
 }
