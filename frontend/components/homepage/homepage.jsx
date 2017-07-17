@@ -65,7 +65,7 @@ class Homepage extends React.Component {
       });
     } else if (item === 'contact') {
       window.scrollTo({
-        top: 2735,
+        top: 3190,
         left: 0,
         behavior: 'smooth'
       });

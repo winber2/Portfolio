@@ -79,6 +79,10 @@ ul.projects {
       background-image: asset-url('valkyrie.jpg');
     }
 
+    div.streamplay-image {
+      background-image: asset-url('streamplay.jpg');
+    }
+
     section {
       position: relative;
       right: 70px;
@@ -93,57 +97,7 @@ ul.projects {
     }
   }
 
-  li.vibe:hover {
-    article {
-      transform: translateX(-15px) translateY(10px);
-      cursor: pointer;
-    }
-
-    div {
-      transform: scale(1.2);
-    }
-
-    h1 {
-      top: 10px;
-      height: 80px;
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      top: 40px;
-    }
-
-    section {
-      transform: translateX(15px) translateY(-10px);
-    }
-  }
-
-  li.algomapper:hover {
-    article {
-      transform: translateX(-15px) translateY(10px);
-      cursor: pointer;
-    }
-
-    div {
-      transform: scale(1.2);
-    }
-
-    h1 {
-      top: 10px;
-      height: 80px;
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      top: 40px;
-    }
-
-    section {
-      transform: translateX(15px) translateY(-10px);
-    }
-  }
-
-  li.valkyrie:hover {
+  li.vibe:hover, li.algomapper:hover, li.valkyrie:hover, li.streamplay:hover {
     article {
       transform: translateX(-15px) translateY(10px);
       cursor: pointer;

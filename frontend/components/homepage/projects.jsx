@@ -52,6 +52,20 @@ class Projects extends React.Component {
               <h2>Classic arcade-style bullet hell game built with Object-Oriented vanilla JavaScript</h2>
             </section>
           </li>
+          <div className="border" />
+          <li className="streamplay">
+            <article className="streamplay">
+              <div className="streamplay-image">
+                <a href='https://streamplay-app.herokuapp.com' />
+              </div>
+            </article>
+            <section className="project-description">
+              <h1>Streamplay</h1>
+              <h6>• Utilized Websockets and Google OAuth2 to stream messages</h6>
+              <h6>• Hit Youtube API to search and display live broadcasts</h6>
+              <h2>Small-scale chatting application that lets users discuss live broadcasting streams</h2>
+            </section>
+          </li>
         </ul>
       </div>
     );
