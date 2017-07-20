@@ -1,4 +1,5 @@
 import React from 'react';
+import Slide from '../gadgets/slide';
 
 class Gadgets extends React.Component {
   constructor(props) {
@@ -6,6 +7,11 @@ class Gadgets extends React.Component {
     this.state = {
       gadgetPlayground: <span className='gadget-select'>Please select a gadget from the list!</span>,
     };
+    this.openGadget = this.openGadget.bind(this);
+  }
+
+  openGadget(prop) {
+    return () => this.setState({ gadgetPlayground: prop})
   }
 
   render() {
@@ -22,7 +28,7 @@ class Gadgets extends React.Component {
             <h2>Gadget List</h2>
             <div onClick={this.props.closeModal} className='arrow-back' />
           </li>
-          <li>Slide Effect</li>
+          <li onClick={this.openGadget(<Slide />)}>Slide Effect</li>
           <li>Form Builder</li>
         </ul>
       </div>

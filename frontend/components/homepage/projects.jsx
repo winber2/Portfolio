@@ -8,6 +8,11 @@ class Projects extends React.Component {
     this.state = { isOpen: '' };
     this.toggleModal = this.toggleModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    document.onkeydown = (e) => {
+      if (e.keyCode === 27) {
+        this.closeModal();
+      }
+    };
   }
 
   toggleModal() {
