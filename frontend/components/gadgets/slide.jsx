@@ -140,36 +140,40 @@ class Slide extends React.Component {
 
   render() {
     return(
-      <main className='slide'>
-        <div className='flexbox'>
-          <ul id='flexbox-image-wrapper'>
-            <li className='flexbox'><img src='assets/slide/2B.jpg'></img></li>
-            <li className='flexbox'><img src='assets/slide/A2.jpg'></img></li>
-            <li className='flexbox'><img src='assets/slide/nier 2b stance.jpg'></img></li>
-            <li className='flexbox'><img src='assets/slide/nier epic.jpg'></img></li>
-            <li className='flexbox'><img src='assets/slide/nier.jpg'></img></li>
-            <li className='flexbox'><img src='assets/slide/A2 epic.jpg'></img></li>
-            <li className='flexbox'><img src='assets/slide/2b pic.jpg'></img></li>
-            <li className='flexbox'><img src='assets/slide/2b stand.jpg'></img></li>
-            <li className='flexbox'><img src='assets/slide/2b sad.jpg'></img></li>
-            <li className='flexbox'><img src='assets/slide/2b 9s.jpg'></img></li>
-          </ul>
-        </div>
-        <div className='sin'>
-          <ul id='sin-image-wrapper'>
-            <li className='sin' id='p1'><img src='assets/slide/A2.jpg'></img></li>
-            <li className='sin' id='p2'><img src='assets/slide/2B.jpg'></img></li>
-            <li className='sin' id='p3'><img src='assets/slide/nier 2b stance.jpg'></img></li>
-            <li className='sin' id='p4'><img src='assets/slide/nier epic.jpg'></img></li>
-            <li className='sin' id='p5'><img src='assets/slide/nier.jpg'></img></li>
-            <li className='sin' id='p6'><img src='assets/slide/A2.jpg'></img></li>
-            <li className='sin' id='p7'><img src='assets/slide/2b pic.jpg'></img></li>
-            <li className='sin' id='p8'><img src='assets/slide/2b stand.jpg'></img></li>
-            <li className='sin' id='p9'><img src='assets/slide/2b sad.jpg'></img></li>
-            <li className='sin' id='p10'><img src='assets/slide/2b 9s.jpg'></img></li>
-          </ul>
-        </div>
-      </main>
+      <div className='slide'>
+        <h1>Image Slide Effect</h1>
+        <p>A pretty cool slide effect using flexbox(left) and absolute position(right) that moves images based on your mouse position. The math is not very complicated, but you just need to figure the right kinds of equations to use! I used a gaussian curve for the left container and sin waves for the right container.</p>
+        <main className='slide'>
+          <div className='flexbox'>
+            <ul id='flexbox-image-wrapper'>
+              <li className='flexbox'><img src='assets/slide/2B.jpg'></img></li>
+              <li className='flexbox'><img src='assets/slide/A2.jpg'></img></li>
+              <li className='flexbox'><img src='assets/slide/nier 2b stance.jpg'></img></li>
+              <li className='flexbox'><img src='assets/slide/nier epic.jpg'></img></li>
+              <li className='flexbox'><img src='assets/slide/nier.jpg'></img></li>
+              <li className='flexbox'><img src='assets/slide/A2 epic.jpg'></img></li>
+              <li className='flexbox'><img src='assets/slide/2b pic.jpg'></img></li>
+              <li className='flexbox'><img src='assets/slide/2b stand.jpg'></img></li>
+              <li className='flexbox'><img src='assets/slide/2b sad.jpg'></img></li>
+              <li className='flexbox'><img src='assets/slide/2b 9s.jpg'></img></li>
+            </ul>
+          </div>
+          <div className='sin'>
+            <ul id='sin-image-wrapper'>
+              <li className='sin' id='p1'><img src='assets/slide/A2.jpg'></img></li>
+              <li className='sin' id='p2'><img src='assets/slide/2B.jpg'></img></li>
+              <li className='sin' id='p3'><img src='assets/slide/nier 2b stance.jpg'></img></li>
+              <li className='sin' id='p4'><img src='assets/slide/nier epic.jpg'></img></li>
+              <li className='sin' id='p5'><img src='assets/slide/nier.jpg'></img></li>
+              <li className='sin' id='p6'><img src='assets/slide/A2.jpg'></img></li>
+              <li className='sin' id='p7'><img src='assets/slide/2b pic.jpg'></img></li>
+              <li className='sin' id='p8'><img src='assets/slide/2b stand.jpg'></img></li>
+              <li className='sin' id='p9'><img src='assets/slide/2b sad.jpg'></img></li>
+              <li className='sin' id='p10'><img src='assets/slide/2b 9s.jpg'></img></li>
+            </ul>
+          </div>
+        </main>
+      </div>
 
     )
   }

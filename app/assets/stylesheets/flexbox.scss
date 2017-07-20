@@ -1,12 +1,26 @@
+div.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 65%;
+  height: 600px;
+
+  p {
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+  }
+}
+
 main.slide {
-  background: LightBlue;
   display: flex;
   align-items: center;
   justify-content: center;
 
   div.flexbox {
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px;
   }
 
   ul#flexbox-image-wrapper {
@@ -39,7 +53,7 @@ main.slide {
 
   div.sin {
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px;
   }
 
   ul#sin-image-wrapper {
