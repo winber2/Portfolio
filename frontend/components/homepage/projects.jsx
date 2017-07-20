@@ -1,14 +1,21 @@
 import React from 'react';
+import Gadgets from './gadgets';
+
 
 class Projects extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { isOpen: '' };
   }
 
+  toggleModal() {
+    this.setState({ isOpen: 'open' });
+  }
 
   render() {
     return(
       <div className="projects">
+        <Gadgets open={this.state.isOpen} />
         <h1>projects</h1>
         <ul className="projects">
           <li className="vibe">
@@ -64,6 +71,20 @@ class Projects extends React.Component {
               <h6>• Utilized Websockets and Google OAuth2 to stream messages</h6>
               <h6>• Hit Youtube API to search and display live broadcasts</h6>
               <h2>Small-scale chatting application that lets users discuss live broadcasting streams</h2>
+            </section>
+          </li>
+          <div className="border" />
+          <li className="gadgets">
+            <article className="gadgets">
+              <div className="gadgets-image">
+                <a href='http://www.vibemusic.life' />
+              </div>
+            </article>
+            <section className="project-description">
+              <h1>Personal Gadgets</h1>
+              <h6>• Utilizes different data strucures, algoritms, and libraries</h6>
+              <h6>• Come check them out!</h6>
+              <h2>Some nifty little creations I've made in my free time</h2>
             </section>
           </li>
         </ul>
