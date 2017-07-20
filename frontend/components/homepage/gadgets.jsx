@@ -11,13 +11,13 @@ class Gadgets extends React.Component {
   render() {
     return(
       <div className={`gadgets-modal ${this.props.open}`}>
-        <div className='gadgets-modal__background' />
-        <main className="gadget-playground-wrapper">
+        <div className={`gadgets-modal__background ${this.props.open}`} />
+        <main className={`gadget-playground-wrapper ${this.props.open}`}>
           <div className='gadget-playground'>
             {this.state.gadgetPlayground}
           </div>
         </main>
-        <ul className="gadgets-list">
+        <ul className={`gadgets-list ${this.props.open}`}>
           <li>
             <h2>Gadget List</h2>
             <div onClick={this.props.closeModal} className='arrow-back' />

@@ -16,13 +16,13 @@ class Projects extends React.Component {
       $('body').toggleClass('open');
     } else {
       this.setState({ isOpen: '' });
-      $('body').toggleClass('open');
+      setTimeout(() => $('body').toggleClass('open'), 500);
     }
   }
 
   closeModal() {
     this.setState({ isOpen: '' });
-    $('body').removeClass('open');
+    setTimeout(() => $('body').removeClass('open'), 500);
   }
 
   render() {

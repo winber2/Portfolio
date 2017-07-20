@@ -1,17 +1,21 @@
 div.gadgets-modal {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  opacity: 0;
 
   position: fixed;
-  z-index: 999;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  transition: z-index 1s step-end, opacity 0.5s 0.5s ease;
 
   &.open {
-    display: flex;
+    opacity: 1;
+    z-index: 999;
+    transition: z-index 0.5s step-start, opacity 0.5s 0s ease;
   }
 }
 
@@ -20,7 +24,7 @@ div.gadgets-modal__background {
   top: 0;
   left: 0;
   z-index: 0;
-  background: white;
+  background: gray;
   width: 100vw;
   height: 100vh;
   opacity: 0.7;
@@ -28,9 +32,16 @@ div.gadgets-modal__background {
 
 main.gadget-playground-wrapper {
   flex-grow: 1;
+  opacity: 0;
   height: 100vh;
   position: relative;
   z-index: 1;
+  transition: all 0.5s 0s ease;
+
+  &.open {
+    opacity: 1;
+    transition: all 0.5s 0.5s ease;
+  }
 
   div.gadget-playground {
     background: white;
@@ -56,7 +67,15 @@ ul.gadgets-list {
   height: 100vh;
   width: 225px;
   position: relative;
+  right: -250px;
   z-index: 1;
+
+  transition: all 0.5s 0s ease;
+
+  &.open {
+    right: 0;
+    transition: all 0.5s 0.5s ease;
+  }
 
   h2 {
     color: white;
