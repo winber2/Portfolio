@@ -24,10 +24,10 @@ class Gadgets extends React.Component {
           </div>
         </main>
         <ul className={`gadgets-list ${this.props.open}`}>
-          <li>
+          <div>
             <h2>Gadget List</h2>
             <div onClick={this.props.closeModal} className='arrow-back' />
-          </li>
+          </div>
           <li onClick={this.openGadget(<Slide />)}>Slide Effect</li>
           <li>Form Builder</li>
         </ul>

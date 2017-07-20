@@ -89,9 +89,19 @@ ul.gadgets-list {
     margin-left: 20px;
     padding: 5px;
     color: white;
+    position: relative;
+    left: 0;
+    transition: all 0.4s;
+    transition-timing-function: cubic-bezier(0.6,-0.69, 0.53, 2.13);
+
+    &:hover {
+      cursor: pointer;
+      text-shadow: 0 0 0 white;
+      left: 15px;
+    }
   }
 
-  li:first-child {
+  div:first-child {
     display: flex;
     align-items: center;
     justify-content: space-between;
