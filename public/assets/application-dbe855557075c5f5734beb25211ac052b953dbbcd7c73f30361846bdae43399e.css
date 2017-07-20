@@ -1,0 +1,923 @@
+/* line 1, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about-background {
+  background: #f9f9f9;
+  border-bottom: 2px solid LightGray;
+}
+
+/* line 6, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about {
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  width: 1000px;
+  height: 100%;
+}
+/* line 13, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about h1 {
+  text-align: center;
+  font-size: 45pt;
+  margin-bottom: 50px;
+}
+/* line 19, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 24, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about p {
+  font-size: 13pt;
+  color: #404040;
+}
+/* line 29, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about section.about-and-skills {
+  display: flex;
+}
+/* line 32, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about section.about-and-skills aside.about {
+  flex: 1;
+  margin-right: 50px;
+}
+/* line 37, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about section.about-and-skills ul.skills {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+/* line 42, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about section.about-and-skills ul.skills ul.skills-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+/* line 48, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about section.about-and-skills ul.skills ul.skills-list li {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+/* line 53, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about section.about-and-skills ul.skills ul.skills-list li div.bar {
+  transition: all 0.4s;
+}
+/* line 57, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about section.about-and-skills ul.skills ul.skills-list li:hover div.bar {
+  background: #469ad4;
+}
+/* line 61, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about section.about-and-skills ul.skills ul.skills-list li span {
+  font-size: 16pt;
+}
+/* line 65, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.about section.about-and-skills ul.skills ul.skills-list li div.bar-line {
+  width: 100%;
+  height: 5px;
+  border-bottom: 1px solid LightGray;
+}
+
+/* line 76, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.javascript {
+  height: 100%;
+  width: 100%;
+  background: #87c6f1;
+}
+
+/* line 82, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.ruby-rails {
+  height: 100%;
+  width: 80%;
+  background: #87c6f1;
+}
+
+/* line 88, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.react-redux {
+  height: 100%;
+  width: 80%;
+  background: #87c6f1;
+}
+
+/* line 94, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.html {
+  height: 100%;
+  width: 80%;
+  background: #87c6f1;
+}
+
+/* line 100, D:/Programming/Portfolio/app/assets/stylesheets/about.scss */
+div.css {
+  height: 100%;
+  width: 80%;
+  background: #87c6f1;
+}
+/* line 1, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 50px 0 50px;
+  border-color: #ffffff transparent transparent transparent;
+  position: relative;
+  bottom: 2px;
+  padding-bottom: 50px;
+}
+
+/* line 12, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact {
+  margin: 0 auto;
+  background: #f9f9f9;
+  border-top: 2px solid LightGray;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* line 22, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact h1 {
+  margin: 50px 0;
+}
+/* line 24, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+}
+/* line 30, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field textarea {
+  padding: 7px 10px;
+  background: #87c6f1;
+  border: none;
+  margin-bottom: 40px;
+  border-left: 5px solid #2294d4;
+  font-size: 16pt;
+  resize: none;
+  height: 300px;
+  width: 100%;
+  color: black;
+}
+/* line 42, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field textarea:focus {
+  outline: none;
+}
+/* line 47, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field input {
+  padding: 7px 10px;
+  background: #87c6f1;
+  border: none;
+  margin-bottom: 10px;
+  border-left: 5px solid #2294d4;
+  font-size: 16pt;
+  color: black;
+  width: 100%;
+}
+/* line 57, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field input:focus {
+  outline: none;
+}
+/* line 62, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field button {
+  position: relative;
+  padding: 8px 15px;
+  background: #87c6f1;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 20pt;
+  font-weight: 400;
+  color: black;
+}
+/* line 72, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field button:focus {
+  outline: none;
+}
+/* line 76, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field button p {
+  position: relative;
+  z-index: 10;
+}
+/* line 81, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field button div.button-fill {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 0px;
+  width: 100%;
+  background-color: #2294d4;
+  transition: height 0.4s ease;
+}
+/* line 92, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field button:hover div.button-fill {
+  height: 100%;
+}
+/* line 96, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field button.submitted div.button-fill {
+  height: 100%;
+}
+/* line 101, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field span {
+  white-space: pre;
+  opacity: 0;
+  font-size: 16pt;
+  color: #3a3177;
+  margin-bottom: 15px;
+  transition: opacity 0.5s;
+  transition-delay: 0.3s;
+}
+/* line 110, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field span.active {
+  opacity: 1;
+}
+/* line 114, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+div.contact section.input-field span.transitioning {
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+/* line 122, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+ul.contacts {
+  display: flex;
+  transform: translateY(-30px);
+  transition: transform 0.5s;
+}
+/* line 127, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+ul.contacts.active {
+  transform: translateY(0px);
+}
+/* line 131, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+ul.contacts figure a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* line 137, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+ul.contacts figure.linkedin {
+  background-image: url(/assets/linkedin-grey-2d900c9d12b47b47294560e1a795a88d8d83bdcf4dcc085cc7916b24842910f4.png);
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+/* line 143, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+ul.contacts figure.linkedin:hover {
+  background-image: url(/assets/linkedin-cd5fa5d53ebaaa5d570b8734b8d1292f25d66acabcb2f3e90166ffbd65133c80.png);
+  cursor: pointer;
+}
+/* line 149, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+ul.contacts figure.github {
+  background-image: url(/assets/github-grey-fec889e089a94f846211929a2e7fb2cb0b830443164f6ea7030d7ea93965ef9e.png);
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+}
+/* line 156, D:/Programming/Portfolio/app/assets/stylesheets/contact.scss */
+ul.contacts figure.github:hover {
+  background-image: url(/assets/github-9b059a2e02cffbb0c510b5be4d82d16dfb724b1be068d626cde3c5622aa3f15d.png);
+  cursor: pointer;
+}
+/* line 1, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+div.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 65%;
+  height: 600px;
+}
+/* line 9, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+div.slide p {
+  font-size: 18px;
+  width: 80%;
+  text-align: center;
+}
+
+/* line 16, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 21, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide div.flexbox {
+  margin: 0 auto;
+  padding: 20px;
+}
+/* line 26, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide ul#flexbox-image-wrapper {
+  display: flex;
+  height: 250px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  margin-right: 30px;
+}
+/* line 35, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  overflow: hidden;
+  flex: 1;
+  border-right: 1px solid black;
+}
+/* line 45, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li:last-child {
+  border-right: none;
+}
+/* line 49, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide img {
+  height: 250px;
+  float: left;
+}
+/* line 54, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide div.sin {
+  margin: 0 auto;
+  padding: 20px;
+}
+/* line 59, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide ul#sin-image-wrapper {
+  display: flex;
+  height: 250px;
+  width: 450px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+/* line 68, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li.sin {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 75, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li#p1 {
+  left: 0;
+}
+/* line 76, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li#p2 {
+  left: 10%;
+}
+/* line 77, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li#p3 {
+  left: 20%;
+}
+/* line 78, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li#p4 {
+  left: 30%;
+}
+/* line 79, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li#p5 {
+  left: 40%;
+}
+/* line 80, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li#p6 {
+  left: 50%;
+}
+/* line 81, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li#p7 {
+  left: 60%;
+}
+/* line 82, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li#p8 {
+  left: 70%;
+}
+/* line 83, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li#p9 {
+  left: 80%;
+}
+/* line 84, D:/Programming/Portfolio/app/assets/stylesheets/flexbox.scss */
+main.slide li#p10 {
+  left: 90%;
+}
+/* line 1, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+div.gadgets-modal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: z-index 1s step-end, opacity 0.5s 0.5s ease;
+}
+/* line 15, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+div.gadgets-modal.open {
+  opacity: 1;
+  z-index: 999;
+  transition: z-index 0.5s step-start, opacity 0.5s 0s ease;
+}
+
+/* line 22, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+div.gadgets-modal__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: gray;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.7;
+}
+
+/* line 33, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+main.gadget-playground-wrapper {
+  flex-grow: 1;
+  opacity: 0;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s 0s ease;
+}
+/* line 41, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+main.gadget-playground-wrapper.open {
+  opacity: 1;
+  transition: all 0.5s 0.5s ease;
+}
+/* line 46, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+main.gadget-playground-wrapper div.gadget-playground {
+  background: white;
+  border-radius: 5px;
+  margin: 20px;
+  height: calc(100vh - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 56, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+main.gadget-playground-wrapper div.gadget-playground span.gadget-select {
+  color: lightgray;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+/* line 64, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+ul.gadgets-list {
+  background: #573c82;
+  padding: 10px;
+  height: 100vh;
+  width: 225px;
+  min-width: 225px;
+  position: relative;
+  right: -250px;
+  z-index: 1;
+  transition: all 0.5s 0s ease;
+}
+/* line 76, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+ul.gadgets-list.open {
+  right: 0;
+  transition: all 0.5s 0.5s ease;
+}
+/* line 81, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+ul.gadgets-list h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: left;
+}
+/* line 88, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+ul.gadgets-list li {
+  margin-left: 20px;
+  padding: 5px;
+  color: white;
+  position: relative;
+  left: 0;
+  transition: all 0.4s;
+  transition-timing-function: cubic-bezier(0.6, -0.69, 0.53, 2.13);
+}
+/* line 97, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+ul.gadgets-list li:hover {
+  cursor: pointer;
+  text-shadow: 0 0 0 white;
+  left: 15px;
+}
+/* line 104, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+ul.gadgets-list div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 20px 20px;
+}
+/* line 110, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+ul.gadgets-list div:first-child div.arrow-back {
+  background-image: url(/assets/white-arrow-849d3d22add1b3d27ab3167b913577fa8dc9763a8578aa9ae761837959f58594.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-90deg);
+}
+/* line 118, D:/Programming/Portfolio/app/assets/stylesheets/gadgets.scss */
+ul.gadgets-list div:first-child div.arrow-back:hover {
+  cursor: pointer;
+}
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+/* line 3, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+body.open {
+  overflow: hidden;
+}
+
+/* line 7, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background: transparent;
+  width: 100%;
+  height: 40px;
+}
+
+/* line 16, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+nav {
+  background: white;
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+/* line 24, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+nav span {
+  font-size: 22pt;
+}
+/* line 27, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+nav span:hover {
+  cursor: pointer;
+  text-shadow: 0 0 0 black;
+}
+/* line 33, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+nav div.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+/* line 39, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+nav ul {
+  display: flex;
+  position: relative;
+  align-self: flex-start;
+}
+/* line 44, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+nav ul li {
+  color: Black;
+  padding: 3px 20px;
+  font-size: 22px;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+/* line 55, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+nav ul li:hover {
+  cursor: pointer;
+  text-shadow: 0 0 0 black;
+}
+/* line 61, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+nav ul li.nav-contact.active {
+  transform: translateX(-60px);
+  opacity: 1;
+  z-index: 10;
+}
+/* line 66, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+nav ul li.nav-projects.active {
+  transform: translateX(-170px);
+  opacity: 1;
+  z-index: 10;
+}
+/* line 71, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+nav ul li.nav-about.active {
+  transform: translateX(-290px);
+  opacity: 1;
+  z-index: 10;
+}
+
+/* line 79, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.burger {
+  background-image: url(/assets/hamburger-ecdaa9671b2250859839500dfac1b2df1f53b4a8fba46d4e8953291c96b2bbd0.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  transition: transform 0.4s;
+}
+/* line 90, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.burger.active {
+  transform: rotate(180deg);
+}
+/* line 94, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.burger:hover {
+  cursor: pointer;
+}
+
+/* line 99, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content {
+  background-image: url(/assets/desktop2-f6d56ba5768040ae933c937604165c53fb13ea045906556f6be16a49f5a3fb67.png);
+  background-size: 1100px 500px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #87c6f1;
+  height: 700px;
+  border-bottom: 2px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* line 113, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content h1 {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 50pt;
+  margin-top: 100px;
+  background: #87c6f1;
+  position: relative;
+  z-index: 5;
+}
+/* line 124, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content h2 {
+  position: relative;
+  top: -50px;
+  margin-bottom: 100px;
+  transition: all 1s;
+}
+/* line 130, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content h2.active {
+  top: 0;
+}
+/* line 135, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content div.information {
+  width: 820px;
+  height: 392px;
+  display: flex;
+}
+/* line 140, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content div.information code {
+  background: #f5f5f5;
+}
+/* line 143, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content div.information div.title {
+  align-self: flex-start;
+  min-width: 500px;
+  max-width: 500px;
+}
+/* line 148, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content div.information div.title strong {
+  color: lightblue;
+}
+/* line 152, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content div.information div.title strong.aside {
+  color: black;
+}
+/* line 157, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content div.information div.title strong.purple {
+  color: #9a009a;
+}
+/* line 158, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content div.information div.title strong.red {
+  color: #e2040d;
+}
+/* line 159, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content div.information div.title strong.yellow {
+  color: #ffaa09;
+}
+/* line 160, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content div.information div.title strong.blue {
+  color: #2763ef;
+}
+/* line 161, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content div.information div.title strong.green {
+  color: #559855;
+}
+/* line 165, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.main-content .typist-header {
+  font-family: Inconsolata;
+  font-weight: bold;
+  font-size: 15pt;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: black;
+  white-space: pre;
+}
+
+/* line 176, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.arrow {
+  width: 75px;
+  height: 75px;
+  min-height: 75px;
+  min-width: 75px;
+  position: relative;
+  top: 40px;
+  border-radius: 50%;
+  background-color: #87c6f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 190, D:/Programming/Portfolio/app/assets/stylesheets/homepage.scss */
+div.arrow div.arrow-image {
+  background-image: url(/assets/arrow-38eb221bce10b1baee90dddc27e48c16f17731a72c92defff08a88941f65bc56.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  width: 55px;
+  height: 55px;
+}
+/* line 1, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+div.projects {
+  margin: 0 auto;
+  width: 1000px;
+  padding: 50px 0 40px 0;
+}
+
+/* line 7, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects {
+  display: flex;
+  flex-direction: column;
+}
+/* line 11, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li {
+  display: flex;
+  height: 350px;
+  margin: 50px 0;
+  margin-left: 80px;
+  justify-content: center;
+}
+/* line 18, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li article {
+  margin: 20px;
+  height: 310px;
+  width: 310px;
+  max-height: 310px;
+  max-width: 310px;
+  min-width: 310px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s;
+  overflow: hidden;
+  position: relative;
+}
+/* line 32, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li article div {
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s;
+  height: 100%;
+  width: 100%;
+}
+/* line 40, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li article a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* line 47, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li h1 {
+  position: relative;
+  height: 100px;
+  top: 60px;
+  background: #f9f9f9;
+  transition: all 0.5s;
+}
+/* line 55, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li h2 {
+  position: relative;
+  top: 10px;
+  width: 550px;
+  text-align: center;
+  transition: all 0.5s;
+}
+/* line 63, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li h6 {
+  margin: 0 auto;
+  width: 470px;
+  transition: all 0.5s;
+  font-size: 13.5pt;
+}
+/* line 70, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li div.vibe-image {
+  background-image: url(/assets/display-07017d24f460a299d6c1b9ca050d8981120e89e5ad4a90f3b4481422b7fb2fe3.jpg);
+}
+/* line 74, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li div.algomapper-image {
+  background-image: url(/assets/algo-6d8cc495fbaf9d90b9c236b4013cd9eab268b3e71346eea2f054e580abe0c8d1.jpg);
+}
+/* line 78, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li div.valkyrie-image {
+  background-image: url(/assets/valkyrie-462ea5382d3473eb4d9cf23804910ed86b353be321508d9915afd64df63c182b.jpg);
+}
+/* line 82, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li div.streamplay-image {
+  background-image: url(/assets/streamplay-e6c3712d07c4fb62bbc8897e5be3bf8b9f4aa6c8110e72f5693a9829ceca8d5e.jpg);
+}
+/* line 86, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li div.gadgets-image {
+  background-image: url(/assets/gadget-2f7980550d17d5eaaf13845374ceb358180e82fcaeef8908a9b6c7bebd1840ee.png);
+}
+/* line 90, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li section {
+  position: relative;
+  right: 70px;
+  top: 20px;
+  margin: 20px;
+  padding: 10px;
+  background: #f9f9f9;
+  opacity: 0.8;
+  font-size: 14pt;
+  transition: transform 0.5s;
+}
+/* line 105, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li.vibe:hover article, ul.projects li.algomapper:hover article, ul.projects li.valkyrie:hover article, ul.projects li.streamplay:hover article, ul.projects li.gadgets:hover article {
+  transform: translateX(-15px) translateY(10px);
+  cursor: pointer;
+}
+/* line 110, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li.vibe:hover div, ul.projects li.algomapper:hover div, ul.projects li.valkyrie:hover div, ul.projects li.streamplay:hover div, ul.projects li.gadgets:hover div {
+  transform: scale(1.2);
+}
+/* line 114, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li.vibe:hover h1, ul.projects li.algomapper:hover h1, ul.projects li.valkyrie:hover h1, ul.projects li.streamplay:hover h1, ul.projects li.gadgets:hover h1 {
+  top: 10px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+/* line 120, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li.vibe:hover h2, ul.projects li.algomapper:hover h2, ul.projects li.valkyrie:hover h2, ul.projects li.streamplay:hover h2, ul.projects li.gadgets:hover h2 {
+  top: 40px;
+}
+/* line 124, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+ul.projects li.vibe:hover section, ul.projects li.algomapper:hover section, ul.projects li.valkyrie:hover section, ul.projects li.streamplay:hover section, ul.projects li.gadgets:hover section {
+  transform: translateX(15px) translateY(-10px);
+}
+
+/* line 130, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+h1 {
+  text-align: center;
+  font-size: 45pt;
+  margin-bottom: 50px;
+}
+
+/* line 136, D:/Programming/Portfolio/app/assets/stylesheets/projects.scss */
+div.border {
+  height: 2px;
+  width: 800px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: black;
+  opacity: 0.2;
+}
+.Typist .Cursor {
+  display: inline-block;
+}
+
+.Typist .Cursor--blinking {
+  opacity: 1;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  5% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  55% {
+    opacity: 1; }
+  100% {
+    opacity: 1; }
+  }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+div, h1, h2, h3, h4, h5, h6, p, span, ul, ol, li, section, main, body, html,
+footer, header, a, figure, figcaption, img, aside, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font-family: Source Sans Pro;
+  font-weight: 400;
+
+  list-style: none;
+}
