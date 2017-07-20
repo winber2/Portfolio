@@ -20,7 +20,7 @@ class Gadgets extends React.Component {
         <ul className="gadgets-list">
           <li>
             <h2>Gadget List</h2>
-            <div className='arrow-back' />
+            <div onClick={this.props.closeModal} className='arrow-back' />
           </li>
           <li>Slide Effect</li>
           <li>Form Builder</li>

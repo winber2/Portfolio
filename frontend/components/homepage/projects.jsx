@@ -6,16 +6,29 @@ class Projects extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isOpen: '' };
+    this.toggleModal = this.toggleModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   toggleModal() {
-    this.setState({ isOpen: 'open' });
+    if (this.state.isOpen === '') {
+      this.setState({ isOpen: 'open' });
+      $('body').toggleClass('open');
+    } else {
+      this.setState({ isOpen: '' });
+      $('body').toggleClass('open');
+    }
+  }
+
+  closeModal() {
+    this.setState({ isOpen: '' });
+    $('body').removeClass('open');
   }
 
   render() {
     return(
       <div className="projects">
-        <Gadgets open={this.state.isOpen} />
+        <Gadgets closeModal={this.closeModal} open={this.state.isOpen} />
         <h1>projects</h1>
         <ul className="projects">
           <li className="vibe">
@@ -75,10 +88,8 @@ class Projects extends React.Component {
           </li>
           <div className="border" />
           <li className="gadgets">
-            <article className="gadgets">
-              <div className="gadgets-image">
-                <a href='http://www.vibemusic.life' />
-              </div>
+            <article onClick={this.toggleModal} className="gadgets">
+              <div className="gadgets-image" />
             </article>
             <section className="project-description">
               <h1>Personal Gadgets</h1>
