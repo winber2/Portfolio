@@ -1,14 +1,14 @@
 import React from 'react';
-import pic1 from 'assets/images/A2.jpg';
-import pic2 from 'assets/images/2B.jpg';
-import pic3 from 'assets/images/nier 2b stance.jpg';
-import pic4 from 'assets/images/nier epic.jpg';
-import pic5 from 'assets/images/nier.jpg';
-import pic6 from 'assets/images/A2 epic.jpg';
-import pic7 from 'assets/images/2b pic.jpg';
-import pic8 from 'assets/images/2b stand.jpg';
-import pic9 from 'assets/images/2b sad.jpg';
-import pic10 from 'assets/images/2b 9s.jpg';
+// import pic1 from 'assets/images/A2.jpg';
+// import pic2 from 'assets/images/2B.jpg';
+// import pic3 from 'assets/images/nier 2b stance.jpg';
+// import pic4 from 'assets/images/nier epic.jpg';
+// import pic5 from 'assets/images/nier.jpg';
+// import pic6 from 'assets/images/A2 epic.jpg';
+// import pic7 from 'assets/images/2b pic.jpg';
+// import pic8 from 'assets/images/2b stand.jpg';
+// import pic9 from 'assets/images/2b sad.jpg';
+// import pic10 from 'assets/images/2b 9s.jpg';
 
 class Slide extends React.Component {
   constructor(props) {
@@ -156,30 +156,30 @@ class Slide extends React.Component {
         <main className='slide'>
           <div className='flexbox'>
             <ul id='flexbox-image-wrapper'>
-              <li className='flexbox'><img src={pic1}></img></li>
-              <li className='flexbox'><img src={pic2}></img></li>
-              <li className='flexbox'><img src={pic3}></img></li>
-              <li className='flexbox'><img src={pic4}></img></li>
-              <li className='flexbox'><img src={pic5}></img></li>
-              <li className='flexbox'><img src={pic6}></img></li>
-              <li className='flexbox'><img src={pic7}></img></li>
-              <li className='flexbox'><img src={pic8}></img></li>
-              <li className='flexbox'><img src={pic9}></img></li>
-              <li className='flexbox'><img src={pic10}></img></li>
+              <li className='flexbox'><Img src='A2.jpg'></Img></li>
+              <li className='flexbox'><Img src='2B.jpg'></Img></li>
+              <li className='flexbox'><Img src='2b pic.jpg'></Img></li>
+              <li className='flexbox'><Img src='nier 2b stance.jpg'></Img></li>
+              <li className='flexbox'><Img src='nier epic.jpg'></Img></li>
+              <li className='flexbox'><Img src='nier.jpg'></Img></li>
+              <li className='flexbox'><Img src='A2 epic.jpg'></Img></li>
+              <li className='flexbox'><Img src='2b stand.jpg'></Img></li>
+              <li className='flexbox'><Img src='2b sad.jpg'></Img></li>
+              <li className='flexbox'><Img src='2b 9s.jpg'></Img></li>
             </ul>
           </div>
           <div className='sin'>
             <ul id='sin-image-wrapper'>
-              <li className='sin' id='p1'><img src={pic1}></img></li>
-              <li className='sin' id='p2'><img src={pic2}></img></li>
-              <li className='sin' id='p3'><img src={pic3}></img></li>
-              <li className='sin' id='p4'><img src={pic4}></img></li>
-              <li className='sin' id='p5'><img src={pic5}></img></li>
-              <li className='sin' id='p6'><img src={pic6}></img></li>
-              <li className='sin' id='p7'><img src={pic7}></img></li>
-              <li className='sin' id='p8'><img src={pic8}></img></li>
-              <li className='sin' id='p9'><img src={pic9}></img></li>
-              <li className='sin' id='p10'><img src={pic10}></img></li>
+              <li className='sin' id='p1'><Img src='A2.jpg'></Img></li>
+              <li className='sin' id='p2'><Img src='2B.jpg'></Img></li>
+              <li className='sin' id='p3'><Img src='2b pic.jpg'></Img></li>
+              <li className='sin' id='p4'><Img src='nier 2b stance.jpg'></Img></li>
+              <li className='sin' id='p5'><Img src='nier epic.jpg'></Img></li>
+              <li className='sin' id='p6'><Img src='nier.jpg'></Img></li>
+              <li className='sin' id='p7'><Img src='A2 epic.jpg'></Img></li>
+              <li className='sin' id='p8'><Img src='2b stand.jpg'></Img></li>
+              <li className='sin' id='p9'><Img src='2b sad.jpg'></Img></li>
+              <li className='sin' id='p10'><Img src='2b 9s.jpg'></Img></li>
             </ul>
           </div>
         </main>

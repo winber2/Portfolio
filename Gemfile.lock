@@ -203,6 +203,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.0)
   rails (~> 5.0.3)
+  react-rails
   react-rails-img
   sass-rails (~> 5.0)
   spring

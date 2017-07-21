@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'react-rails'
 gem 'react-rails-img'
 gem 'mailgun-ruby', '~>1.0.2', require: 'mailgun'
 gem 'figaro'
