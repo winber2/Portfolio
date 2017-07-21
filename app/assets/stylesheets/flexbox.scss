@@ -70,6 +70,11 @@ main.slide {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-left: 1px solid black;
+  }
+
+  li.sin:first-child {
+    border-left: none;
   }
 
   li#p1 { left: 0; }
