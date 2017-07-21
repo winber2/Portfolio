@@ -29,7 +29,7 @@ module.exports = {
     filename: './bundle.js'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.erb', '*']
+    extensions: ['.js', '.jsx', '*']
   },
   plugins: plugins,
   module: {

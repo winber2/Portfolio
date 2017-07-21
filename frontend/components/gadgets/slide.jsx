@@ -146,7 +146,7 @@ class Slide extends React.Component {
         <main className='slide'>
           <div className='flexbox'>
             <ul id='flexbox-image-wrapper'>
-              <li className='flexbox'><img src='assets/2B.jpg'></img></li>
+              <li className='flexbox'><img src='assets/slide/2B.jpg'></img></li>
               <li className='flexbox'><img src='assets/slide/A2.jpg'></img></li>
               <li className='flexbox'><img src='assets/slide/nier 2b stance.jpg'></img></li>
               <li className='flexbox'><img src='assets/slide/nier epic.jpg'></img></li>
