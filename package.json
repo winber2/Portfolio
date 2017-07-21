@@ -24,6 +24,7 @@
     "babel-preset-react": "^6.24.1",
     "file-loader": "^0.11.2",
     "lodash": "^4.17.4",
+    "rails-erb-loader": "^5.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-highlight": "^0.10.0",

@@ -65,6 +65,18 @@ main.slide {
     overflow: hidden;
   }
 
+  div.pic-wrapper {
+    display:flex;
+  }
+
+  figure.pic1 {
+    background-image: asset-url('2B.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+  }
+
   li.sin {
     position: absolute;
     display: flex;

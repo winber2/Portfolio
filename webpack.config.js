@@ -29,7 +29,7 @@ module.exports = {
     filename: './bundle.js'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '*'],
+    extensions: ['.js', '.jsx', '.erb', '*'],
     alias: {
       assets: path.resolve('./app/assets'), // Makes it easier to reference our assets in jsx files
       react: path.resolve('./node_modules/react'),
@@ -58,7 +58,12 @@ module.exports = {
             publicPath: '/assets' // Endpoint asset can be found at on Rails server
           }
         }
-      }
+      },
+      {
+        test: /\.erb$/,
+        enforce: 'pre',
+        loader: 'rails-erb-loader'
+      },
     ]
   },
   devtool: 'source-maps'
