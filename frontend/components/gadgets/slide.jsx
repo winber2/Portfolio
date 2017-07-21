@@ -1,14 +1,14 @@
 import React from 'react';
-import pic1 from 'assets/images/slide/A2.jpg';
-import pic2 from 'assets/images/slide/2B.jpg';
-import pic3 from 'assets/images/slide/nier 2b stance.jpg';
-import pic4 from 'assets/images/slide/nier epic.jpg';
-import pic5 from 'assets/images/slide/nier.jpg';
-import pic6 from 'assets/images/slide/A2 epic.jpg';
-import pic7 from 'assets/images/slide/2b pic.jpg';
-import pic8 from 'assets/images/slide/2b stand.jpg';
-import pic9 from 'assets/images/slide/2b sad.jpg';
-import pic10 from 'assets/images/slide/2b 9s.jpg';
+import pic1 from 'assets/images/A2.jpg';
+import pic2 from 'assets/images/2B.jpg';
+import pic3 from 'assets/images/nier 2b stance.jpg';
+import pic4 from 'assets/images/nier epic.jpg';
+import pic5 from 'assets/images/nier.jpg';
+import pic6 from 'assets/images/A2 epic.jpg';
+import pic7 from 'assets/images/2b pic.jpg';
+import pic8 from 'assets/images/2b stand.jpg';
+import pic9 from 'assets/images/2b sad.jpg';
+import pic10 from 'assets/images/2b 9s.jpg';
 
 class Slide extends React.Component {
   constructor(props) {

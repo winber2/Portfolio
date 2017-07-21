@@ -1,5 +1,5 @@
 import React from 'react';
-import Slide from '../gadgets/slide';
+import Slide from '../gadgets/slide.jsx';
 
 class Gadgets extends React.Component {
   constructor(props) {
