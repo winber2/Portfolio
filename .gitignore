@@ -27,4 +27,4 @@ bundle.js.map
 
 # Ignore application configuration
 /config/application.yml
-/app/assets/webpack
+/app/assets/javascripts/webpack-assets
